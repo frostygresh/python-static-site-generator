@@ -1,6 +1,9 @@
-import Path from pathlab
+from pathlib import Path
 
 class Site:
-    __init__ (self, source, dest):
+    def __init__ (self, source, dest):
         self._source = Path(source)
         self._dest = Path(dest)
+
+    def create_dir (self, path):
+        directory = ''
